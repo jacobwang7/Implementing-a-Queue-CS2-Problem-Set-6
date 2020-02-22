@@ -12,7 +12,7 @@ The interface looks like this. Most of the behaviors are what you'd expect from 
 
 ```java
 public interface RealQueue<T> {
-  enqueue(T item);
+  void enqueue(T item);
   T dequeue();
   T getFront();
   void merge(RealQueue rq2);  // see below for a description
