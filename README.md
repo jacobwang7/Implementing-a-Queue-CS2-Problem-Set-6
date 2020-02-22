@@ -43,7 +43,7 @@ When you have an odd number of elements, the middle element is unambiguous. For 
 To figure out which one is the middle element, you can experiment with integer division or with the `Math.floor()` and `Math.ceil()` methods in conjunction with casting to `double`. You can also experiment with adding 1 or 2 to the size before doing the integer division.
 
 ### How to get to the middle element: linked list
-You can traverse the linked list or you can keep an additional pointer to middle Node, along with the pointer to front and tail. Inserting elements will be straightforward, of course.
+You can traverse the linked list or you can keep an additional pointer to the middle Node, along with the pointer to front and tail. Inserting elements will be straightforward, of course, but don't forget that this is a doubly-linked list.
 
 ### How to get to the middle element: circular array
 You can either have an additional instance variable to keep track of the middle, or you can calculate it on the fly as needed from the indices for front and tail. Keep in mind that this could get complicated if front or tail has wrapped around. The modulus operator might be helpful! 
