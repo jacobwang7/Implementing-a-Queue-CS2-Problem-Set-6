@@ -15,10 +15,10 @@ public interface RealQueue<T> {
   enqueue(T item);
   T dequeue();
   T getFront();
-  void merge(ReaQueue rq2);
+  void merge(ReaQueue rq2);  // see below for a description
   boolean isEmpty();
   int getSize();
-  String toString();
+  String toString();        // print a RealQueue from front to tail
 }
 ```
 
@@ -72,6 +72,8 @@ Once your code works to your satisfaction, push `RealQueueCA.java` and `RealQueu
 
 1. The files **must be in the `src` directory**. You will lose 2 points for each file that is in the wrong directory. The best way to make sure the files are in the right place is to never ever move them in the first place.
 
-2. Your code must compile. If a class does not compile, you will get a 0. If you are struggling and you aren't able to get in touch with me or the TAs, any TAs in the lab can help you compile your code. If it's 11:55pm on the day it's due and you don't want to take the late penalty, comment out the part of the code that is preventing compilation, and include an explanation of why you are commenting it out.
+2. Your code must compile. If a class does not compile, you will get a 0 for that class.
 
-3. The TAs will review and run your code. Note that in addition to running your `main()` method, they will try out one of their own. It's a good idea to do some error checking to avoid any surprises during grading.
+3. The TAs are instructed to take off up to 1 point for missing or inadequate comments. Comment your code to make sure you get this point and to make sure the TAs know what you are trying to do.
+
+4. Note that in addition to running your `main()` method, the TAs will try out one of their own. 
