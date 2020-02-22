@@ -58,7 +58,7 @@ If your queue is empty, remember that `dequeue()` and `getFront()` should either
 You are more than welcome to write additional methods that you might find useful.
 
 ### Testing your code `main()`
-Write code in the main() method to test your implementation. The TAs will be writing their own main methods to test your code, so test your code thoroughly!
+You must write a  main method that works in both implementations. The only difference in the main method as it appears in `RealQueueLL` vs. `RealQueueCA` will be in the lines that instantiate the `RealQueue` objects, of course. The TAs will be writing their own main methods, so test your code very thoroughly!
 
 ---
 
