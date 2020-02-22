@@ -15,7 +15,7 @@ public interface RealQueue<T> {
   enqueue(T item);
   T dequeue();
   T getFront();
-  void merge(ReaQueue rq2);  // see below for a description
+  void merge(RealQueue rq2);  // see below for a description
   boolean isEmpty();
   int getSize();
   String toString();        // print a RealQueue from front to tail
@@ -49,7 +49,7 @@ You can traverse the linked list or you can keep an additional pointer to middle
 You can either have an additional instance variable to keep track of the middle, or you can calculate it on the fly as needed from the indices for front and tail. Keep in mind that this could get complicated if front or tail has wrapped around. The modulus operator might be helpful! 
 
 ### Managing the circular array
-Even though this is a circular array, will need to shift some elements in RQ1 over when you insert an element from RQ2 in the middle of RQ1. You can't overwrite any of the elements in RQ1! 
+Even though this is a circular array, will need to shift some elements in RQ1 over when you insert an element from RQ2 in the middle of RQ1. You can't overwrite any of the elements in RQ1! Also remember that you will have to stop merging when the array is full, just as you cannot enqueue if the array is full.
 
 ### Don't forget the special cases
 If your queue is empty, remember that `dequeue()` and `getFront()` should either throw an exception or return null. There might be some other special cases, so think about these carefully!
